@@ -63,7 +63,7 @@ if __name__ == "__main__":
     if args.email:
         replaceEmail += args.email
     else:
-        replaceEmail += "twolfis@mcx.nl"
+        replaceEmail += "example@mail"
 
    
     if args.current:

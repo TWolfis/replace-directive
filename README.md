@@ -4,6 +4,7 @@ easily replace emails in nagios configuration
 
 ## usage 
 
+```console
 usage: replace-emails.py [-h] [-r] [-c] [-e, EMAIL]
 
 Replace emails in /etc/nagios/generic/contacts.cfg prints out new
@@ -19,4 +20,4 @@ optional arguments:
   -e, EMAIL, --email EMAIL
                         Overwrite default replacement email with specified
                         email
-
+```
