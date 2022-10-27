@@ -1,6 +1,5 @@
 # replace-emails
-easily replace emails in nagios configuration
-
+View and mass replace directives in nagios configuration files
 
 ## usage 
 
