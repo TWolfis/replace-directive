@@ -5,19 +5,24 @@ easily replace emails in nagios configuration
 ## usage 
 
 ```console
-usage: replace-emails.py [-h] [-r] [-c] [-e, EMAIL]
+usage: replace-directive.py [-h] [-r, REPLACEMENT] [-f, FILE] [-w] directive
 
-Replace emails in /etc/nagios/generic/contacts.cfg prints out new
-configuration to terminal
+Find and/or Replace directives in /etc/nagios/generic/contacts.cfg by default
+print values for found directives for possible directives take a look at https
+://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/objectdefinitio
+ns.html
+
+positional arguments:
+  directive             Print out found matches of directive
 
 optional arguments:
   -h, --help            show this help message and exit
-  -r, --replace         Force replacement of emails in
-                        /etc/nagios/generic/contacts.cfg with the replacement
-                        email
-  -c, --current         Print out email addresses in
+  -r, REPLACEMENT, --replacement REPLACEMENT
+                        Overwrites directive values with specified replacement
+  -f, FILE, --file FILE
+                        Look for directive in file, default file is
                         /etc/nagios/generic/contacts.cfg
-  -e, EMAIL, --email EMAIL
-                        Overwrite default replacement email with specified
-                        email
+  -w, --write           Overwrite directive with replacement directive
+                        replacement
+
 ```
